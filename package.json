@@ -1,0 +1,24 @@
+{
+    "name": "certify-me",
+    "version": "1.0.0",
+    "description": "Certificate Generator which can be used in industry of Learning Management System and others to certify their student or bulk sending certification email.",
+    "main": "index.js",
+    "scripts": {
+      "dev:client": "cd client && npm start",
+      "dev:server": "cd server && npm run dev"
+    },
+    "repository": {
+      "type": "git",
+      "url": ""
+    },
+    "keywords": [
+      "nodejs",
+      "reactjs",
+      "html",
+      "canvas",
+      "certificate"
+    ],
+    "author": "Amanpreetsingh16",
+    "license": "ISC",
+    "homepage": ""
+  }
