@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { useCertificate } from "../../../context/CertificateContext";
 import { FieldsType, StateField } from "@/types";
 import { CertificateDownload } from "..";
-import DefaultImage from "../templates/template1.png";
+import DefaultImage from "../templates/template-1.png";
 
 const Canvas = (props: any) => {
   const [baseImage, setBaseImage] = useState<File | string | null>(DefaultImage);

@@ -8,7 +8,7 @@ interface PropsInterface {
 
 export const AddFieldForm = ({ closeModal }: PropsInterface) => {
   const { fields, setFields } = useCertificate();
-  const [field, setField] = useState<FieldsType>({ text: "", image: null, color: "#000000", FW: "500", type: "text", FM: "inter", FD: "center", FS: 20, L: 400, T: 550, MW: 80, LH: 24 });
+  const [field, setField] = useState<FieldsType>({ text: "", image: null, color: "#000000", FW: "500", type: "text", FM: "inter", FD: "center", FS: 18, L: 300, T: 550, MW: 80, LH: 24 });
   const handleAddField = () => {
     setFields([...fields, field]);
     closeModal();
