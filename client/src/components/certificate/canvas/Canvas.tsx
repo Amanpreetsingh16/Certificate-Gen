@@ -6,7 +6,7 @@ import DefaultImage from "../templates/template-1.png";
 
 const Canvas = (props: any) => {
   const [baseImage, setBaseImage] = useState<File | string | null>(DefaultImage);
-  const { fields } = useCertificate();
+  const { fields, selectLayoutType } = useCertificate();
   const [canvasScaleFactor, setCanvasScaleFactor] = useState<number>(0);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const wrapperRef = useRef<HTMLDivElement | null>(null);
