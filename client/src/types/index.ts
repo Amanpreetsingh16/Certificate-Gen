@@ -35,5 +35,6 @@ export interface ContextProps {
   fields: FieldsType[];
   setFields: React.Dispatch<React.SetStateAction<FieldsType[]>>;
   canvasRef: MutableRefObject<HTMLCanvasElement | null>;
+  selectLayoutType: (type: number) => void;
   //desc:StateField[];
 }

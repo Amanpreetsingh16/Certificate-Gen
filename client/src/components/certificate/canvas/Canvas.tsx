@@ -13,6 +13,11 @@ const Canvas = (props: any) => {
 
   const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = event.target.files?.[0];
+    if(event.target.files?.[0].name=="template-1.png"){
+      selectLayoutType(0);
+    }else if(event.target.files?.[0].name=="template-2.png"){
+      selectLayoutType(1);
+    }
     if (selectedFile) setBaseImage(selectedFile);
   };
   function drawWrappedText(ctx: CanvasRenderingContext2D, data: StateField | FieldsType) {

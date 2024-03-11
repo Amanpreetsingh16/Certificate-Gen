@@ -13,10 +13,17 @@ export const CertificateDownload = ({ canvasRef }: { canvasRef: MutableRefObject
       link.click();
     }
   };
+
+  const reload=()=>{
+    window.location.reload();
+  }
   return (
-    <div className="mt-5">
+    <div className="mt-5 flex gap-2 ">
       <button className="btn hover:bg-green-500" onClick={download}>
         Download Certificate
+      </button>
+      <button className="btn hover:bg-green-500" onClick={reload}>
+        Clear Content
       </button>
     </div>
   );
